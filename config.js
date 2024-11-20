@@ -7,10 +7,18 @@ import multer from "multer";
 const upload = multer({ dest: "public/uploads/" });
 import sessions from "express-session";
 
+import bbz307 from "bbz307";
+
 export function createApp(dbconfig) {
   const app = express();
 
   const pool = new Pool(dbconfig);
+
+  const login = new bbz307.Login(
+    "users",
+    ["benutzername", "passwort", "profilbild"],
+    pool
+  );
 
   app.engine("handlebars", engine());
   app.set("view engine", "handlebars");
@@ -30,6 +38,14 @@ export function createApp(dbconfig) {
   );
 
   app.locals.pool = pool;
+
+  app.get("/register", (req, res) => {
+    res.render("register");
+  });
+
+  app.get("/event_formular", function (req, res) {
+    res.render("event_formular");
+  });
 
   return app;
 }
