@@ -2,7 +2,8 @@
   font-family: "Brother 1816";
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -10,7 +11,6 @@ html, body {
   overflow-x: hidden; /* Verhindert horizontales Scrollen */
   box-sizing: border-box;
 }
-
 
 /* Hero */
 .hero {
@@ -55,9 +55,7 @@ header {
   z-index: 3; /* Header liegt über anderen Elementen */
   background: transparent; /* Kein Hintergrund */
   box-sizing: border-box; /* Padding wird in die Breite einbezogen */
-
 }
-
 
 header a {
   text-decoration: none;
@@ -92,4 +90,37 @@ header nav a:hover {
   color: #fff; /* Weiß, du kannst eine andere Farbe wählen */
   margin: 0; /* Entfernt unnötige Abstände */
   text-align: center; /* Zentriert die Überschrift */
+}
+
+/* Mission /*
+/* Kleine Section mit weißem Hintergrund */
+.mission-section {
+  width: 100%;
+  height: 400px; /* Höhere Section, du kannst den Wert anpassen */
+  padding: 40px 20px; /* Platz um den Inhalt */
+  background-color: white; /* Weißer Hintergrund */
+  display: flex; /* Flexbox, um Inhalt zu zentrieren */
+  justify-content: center; /* Horizontal zentrieren */
+  align-items: center; /* Vertikal zentrieren */
+  text-align: center; /* Text im Inneren wird zentriert */
+  box-sizing: border-box;
+}
+
+/* Inhalt innerhalb der Section */
+.mission-section .content {
+  max-width: 800px; /* Maximale Breite des Inhalts */
+  width: 100%; /* Stellt sicher, dass der Inhalt die volle Breite innerhalb des Containers einnimmt */
+}
+
+.mission-section h3 {
+  font-size: 30px; /* Schriftgröße des h3 */
+  color: #b3a07c; /* Farbe des h3 in sanftem Goldbraun */
+  margin-bottom: 20px; /* Abstand unter der Überschrift */
+}
+
+.mission-section p {
+  font-size: 16px; /* Schriftgröße des Textes */
+  color: #333; /* Dunkle Schriftfarbe */
+  line-height: 1.6; /* Zeilenhöhe für besseren Lesefluss */
+  margin: 0; /* Entfernt unnötige Abstände */
 }
