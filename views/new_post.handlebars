@@ -1,3 +1,6 @@
-app.get("/new_post", async function (req, res) {
-    res.render("new_post", {});
-  });
+<h1>Hallo!</h1>
+
+{{#uploads}}
+  <h2>{{location}}</h2>
+  <p>{{datum}}</p>
+{{/uploads}}
