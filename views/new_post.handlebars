@@ -1,6 +1,10 @@
 <h1>Hallo!</h1>
 
-{{#uploads}}
-  <h2>{{location}}</h2>
-  <p>{{datum}}</p>
-{{/uploads}}
+<section class="upload">
+  <form action="/gallery" enctype="multipart/form-data" method="post">
+    <input type="text" name="location" />
+    <input type="text" name="datum" />
+    <input type="file" name="image" />
+    <input type="submit" />
+  </form>
+</section>

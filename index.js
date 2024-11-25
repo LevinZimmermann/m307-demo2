@@ -24,6 +24,18 @@ app.get("/login", (req, res) => {
   res.render("login");
 });
 
+// Startseite New Posts
+app.get("/new_post", (req, res) => {
+  res.render("new_post");
+});
+
+app.post("/gallery", upload.single("image"), async function (req, res) {
+  await app.locals.pool.query("INSERT INTO todos (text) VALUES ($1)", [
+    req.body.text,
+  ]);
+  res.redirect("/");
+});
+
 ////////////////////////////////
 
 // Impressum

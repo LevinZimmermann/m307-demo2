@@ -123,3 +123,8 @@ header nav a:hover {
   line-height: 1.6; /* Zeilenhöhe für besseren Lesefluss */
   margin: 0; /* Entfernt unnötige Abstände */
 }
+
+.upload {
+  background-color: aqua;
+  height: 400px;
+}
