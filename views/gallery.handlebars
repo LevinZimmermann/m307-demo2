@@ -1,6 +1,10 @@
-<h1>Hallo!</h1>
-
-{{#uploads}}
-  <h2>{{location}}</h2>
-  <p>{{datum}}</p>
-{{/uploads}}
+<body class="gallery-page">
+  <section class="gallery-hero">
+    {{#uploads}}
+      <h1>{{title}}</h1>
+      <h2>{{location}}</h2>
+      <p>{{datum}}</p>
+      <img src="{{image}}" />
+    {{/uploads}}
+  </section>
+</body>

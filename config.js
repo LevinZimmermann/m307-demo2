@@ -47,6 +47,15 @@ export function createApp(dbconfig) {
     res.render("event_formular");
   });
 
+  app.post("/gallery", upload.single("image"), async function (req, res) {
+    const date = new Date();
+    await app.locals.pool.query(
+      "INSERT INTO uploads (title, location, datum, image) VALUES ($1, $2, $3, $4)",
+      [req.body.title, req.body.location, date, req.file.filename]
+    );
+    res.redirect("/");
+  });
+
   return app;
 }
 
