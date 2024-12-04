@@ -12,6 +12,8 @@ body {
   box-sizing: border-box;
 }
 
+/******************** Startseite Seite **************************/
+
 /* Hero */
 .hero {
   height: 100vh; /* Ganze Höhe des Viewports */
@@ -138,4 +140,182 @@ header nav a:hover {
 
 .upload {
   padding-top: 100px;
+}
+
+/*Startseite Gallery Section */
+.join {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #252a24; /* Dunkler Hintergrund wie im Bild */
+  color: #fff; /* Weißer Text */
+}
+
+.join .image-join {
+  flex: 1; /* Bild nimmt 50% der Breite ein */
+}
+
+.join .image-join img {
+  width: 50%; /* Bild nimmt die gesamte Breite ein */
+  height: auto;
+  object-fit: cover;
+  margin-left: 100px;
+}
+
+.join .text-join {
+  flex: 1; /* Text nimmt 50% der Breite ein */
+  padding: 0 30px; /* Platz zwischen Bild und Text */
+  max-width: 400px;
+}
+
+.join .text-join p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.join .button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #b3a07c; /* Beige Buttonfarbe */
+  color: #fff; /* Dunkler Text für den Button */
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.join .button:hover {
+  background-color: #a3946e; /* Etwas dunklere Buttonfarbe beim Hover */
+}
+
+/* Startseite Gallery Promo */
+/* Gallery Promo Section */
+.gallery-promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white; /* Heller Hintergrund, wie im Bild */
+  padding: 80px 20px; /* Platz innerhalb der Sektion */
+}
+
+.gallery-promo h2 {
+  font-size: 32px; /* Schriftgröße für den Titel */
+  color: #b3a07c; /* Beige Schriftfarbe */
+  margin-bottom: 40px; /* Abstand zwischen Titel und Button */
+  font-weight: bold;
+  text-transform: uppercase; /* Alle Buchstaben in Großbuchstaben */
+}
+
+.gallery-promo .button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #252a24; /* Dunkler Button-Hintergrund */
+  color: #ffffff; /* Weißer Text */
+  padding: 12px 24px; /* Innenabstand für den Button */
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px; /* Abgerundete Ecken */
+  transition: background-color 0.3s ease;
+}
+
+.gallery-promo .button span {
+  margin-left: 8px; /* Platz zwischen Text und Pfeil */
+}
+
+.gallery-promo .button:hover {
+  background-color: #1e1e1e; /* Etwas dunkler beim Hover */
+}
+
+/******************** Gallery Seite **************************/
+
+/* Allgemeine Einstellungen für die Seite */
+body.gallery-page {
+  margin: 0;
+  padding: 0;
+  background-color: #252a24; /* Dunkler Hintergrund */
+  color: #ffffff; /* Helle Schriftfarbe */
+}
+
+.gallery-hero {
+  margin-top: 100px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-hero h1 {
+  font-size: 40px;
+}
+
+/* Styling der Gallerie-Sektion */
+.gallery-section {
+  text-align: center;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Titel Styling */
+.gallery-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f4f4f4; /* Helleres Weiß für Titel */
+  text-transform: uppercase;
+}
+
+/* Untertitel Styling */
+.gallery-section h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+  color: #bbbbbb; /* Grauer Ton */
+}
+
+/* Datum Styling */
+.gallery-section p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #888888; /* Etwas dunkler für weniger Wichtigkeit */
+}
+
+/* Bild Styling */
+.gallery-section img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 15px;
+}
+
+/* Responsive Design für kleinere Bildschirme */
+@media (max-width: 768px) {
+  .gallery-section h1 {
+    font-size: 2rem;
+  }
+
+  .gallery-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .gallery-section p {
+    font-size: 0.9rem;
+  }
+
+  .gallery-section img {
+    max-width: 100%;
+  }
+}
+
+body.login-seite{
+  
 }
