@@ -19,11 +19,6 @@ app.get("/gallery", async (req, res) => {
   res.render("gallery", { uploads: uploads.rows });
 });
 
-// Startseite Login
-app.get("/login", (req, res) => {
-  res.render("login");
-});
-
 // Startseite New Posts
 app.get("/new_post", (req, res) => {
   res.render("new_post");

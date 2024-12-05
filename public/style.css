@@ -316,6 +316,11 @@ body.gallery-page {
   }
 }
 
-body.login-seite{
-  
+body.login-seite {
+  margin-top: 400px;
+}
+
+
+body.register-seite{
+  margin-top: 400px;
 }

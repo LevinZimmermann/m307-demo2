@@ -1,3 +1,5 @@
+import bcrypt from "bcrypt";
+
 import express from "express";
 import { engine } from "express-handlebars";
 import pg from "pg";
