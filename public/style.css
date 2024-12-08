@@ -187,7 +187,7 @@ header nav a:hover {
 }
 
 .join .button:hover {
-  background-color: #a3946e; /* Etwas dunklere Buttonfarbe beim Hover */
+  background-color: #a3946e;
 }
 
 /* Startseite Gallery Promo */
@@ -198,36 +198,36 @@ header nav a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: white; /* Heller Hintergrund, wie im Bild */
-  padding: 80px 20px; /* Platz innerhalb der Sektion */
+  background-color: white;
+  padding: 80px 20px;
 }
 
 .gallery-promo h2 {
-  font-size: 32px; /* Schriftgröße für den Titel */
-  color: #b3a07c; /* Beige Schriftfarbe */
-  margin-bottom: 40px; /* Abstand zwischen Titel und Button */
+  font-size: 32px;
+  color: #b3a07c;
+  margin-bottom: 40px;
   font-weight: bold;
-  text-transform: uppercase; /* Alle Buchstaben in Großbuchstaben */
+  text-transform: uppercase;
 }
 
 .gallery-promo .button {
   display: inline-block;
   text-decoration: none;
-  background-color: #252a24; /* Dunkler Button-Hintergrund */
-  color: #ffffff; /* Weißer Text */
-  padding: 12px 24px; /* Innenabstand für den Button */
+  background-color: #252a24;
+  color: #ffffff;
+  padding: 12px 24px;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 4px; /* Abgerundete Ecken */
+  border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
 .gallery-promo .button span {
-  margin-left: 8px; /* Platz zwischen Text und Pfeil */
+  margin-left: 8px;
 }
 
 .gallery-promo .button:hover {
-  background-color: #1e1e1e; /* Etwas dunkler beim Hover */
+  background-color: #1e1e1e;
 }
 
 /******************** Gallery Seite **************************/
@@ -236,8 +236,8 @@ header nav a:hover {
 body.gallery-page {
   margin: 0;
   padding: 0;
-  background-color: #252a24; /* Dunkler Hintergrund */
-  color: #ffffff; /* Helle Schriftfarbe */
+  background-color: #252a24;
+  color: #ffffff;
 }
 
 .gallery-hero {
@@ -267,7 +267,7 @@ body.gallery-page {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #f4f4f4; /* Helleres Weiß für Titel */
+  color: #f4f4f4;
   text-transform: uppercase;
 }
 
@@ -276,7 +276,7 @@ body.gallery-page {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 15px;
-  color: #bbbbbb; /* Grauer Ton */
+  color: #bbbbbb;
 }
 
 /* Datum Styling */
@@ -284,7 +284,7 @@ body.gallery-page {
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 20px;
-  color: #888888; /* Etwas dunkler für weniger Wichtigkeit */
+  color: #888888;
 }
 
 /* Bild Styling */
@@ -295,32 +295,4 @@ body.gallery-page {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   margin-top: 15px;
-}
-
-/* Responsive Design für kleinere Bildschirme */
-@media (max-width: 768px) {
-  .gallery-section h1 {
-    font-size: 2rem;
-  }
-
-  .gallery-section h2 {
-    font-size: 1.25rem;
-  }
-
-  .gallery-section p {
-    font-size: 0.9rem;
-  }
-
-  .gallery-section img {
-    max-width: 100%;
-  }
-}
-
-body.login-seite {
-  margin-top: 400px;
-}
-
-
-body.register-seite{
-  margin-top: 400px;
 }
