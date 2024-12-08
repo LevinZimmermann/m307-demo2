@@ -8,7 +8,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow-x: hidden; /* horizontales Scrollen */
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -16,13 +16,13 @@ body {
 
 /* Hero */
 .hero {
-  height: 100vh; /* Ganze Höhe des Viewports */
-  background-image: url("/uploads/background_image.png"); /* Hintergrundbild */
+  height: 100vh;
+  background-image: url("/uploads/background_image.png");
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center; /* Zentriert Inhalte vertikal */
-  justify-content: center; /* Zentriert Inhalte horizontal */
+  align-items: center;
+  justify-content: center;
   text-align: center;
   position: relative;
 }
@@ -34,29 +34,29 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Halbtransparenter Overlay */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 .hero-content {
-  position: relative; /* Über dem Overlay */
+  position: relative;
   z-index: 2;
 }
 
 /* Header */
 
 header {
-  position: fixed; /* Header bleibt oben fixiert */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Header nimmt die gesamte Breite ein */
-  padding: 20px; /* Platz innerhalb des Headers */
-  display: flex; /* Flexbox-Ausrichtung aktivieren */
-  align-items: center; /* Elemente vertikal zentrieren */
-  justify-content: space-between; /* Logo links, Navigation rechts */
-  z-index: 3; /* Header liegt über anderen Elementen */
-  background: transparent; /* Kein Hintergrund */
-  box-sizing: border-box; /* Padding wird in die Breite einbezogen */
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+  background: transparent;
+  box-sizing: border-box;
 }
 
 header a {
@@ -78,20 +78,20 @@ header nav a:hover {
 
 /* Fonts */
 .hero h1 {
-  font-size: 50px; /* Schriftgröße */
-  font-style: italic; /* Kursivschrift */
-  text-transform: uppercase; /* Alles in Großbuchstaben */
-  font-weight: normal; /* Normalgewicht (nicht fett) */
-  color: #fff; /* Weiß, du kannst eine andere Farbe wählen */
-  margin: 0; /* Entfernt unnötige Abstände */
-  text-align: center; /* Zentriert die Überschrift */
+  font-size: 50px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #fff;
+  margin: 0;
+  text-align: center;
 }
 
 .hero p {
-  font-size: 25px; /* Schriftgröße */
-  color: #fff; /* Weiß, du kannst eine andere Farbe wählen */
-  margin: 0; /* Entfernt unnötige Abstände */
-  text-align: center; /* Zentriert die Überschrift */
+  font-size: 25px;
+  color: #fff;
+  margin: 0;
+  text-align: center;
 }
 
 /* Mission Section */
@@ -148,24 +148,24 @@ header nav a:hover {
   align-items: center;
   justify-content: center;
   padding: 40px;
-  background-color: #252a24; /* Dunkler Hintergrund wie im Bild */
-  color: #fff; /* Weißer Text */
+  background-color: #252a24;
+  color: #fff;
 }
 
 .join .image-join {
-  flex: 1; /* Bild nimmt 50% der Breite ein */
+  flex: 1;
 }
 
 .join .image-join img {
-  width: 50%; /* Bild nimmt die gesamte Breite ein */
+  width: 50%;
   height: auto;
   object-fit: cover;
   margin-left: 100px;
 }
 
 .join .text-join {
-  flex: 1; /* Text nimmt 50% der Breite ein */
-  padding: 0 30px; /* Platz zwischen Bild und Text */
+  flex: 1;
+  padding: 0 30px;
   max-width: 400px;
 }
 
@@ -178,8 +178,8 @@ header nav a:hover {
 .join .button {
   display: inline-block;
   text-decoration: none;
-  background-color: #b3a07c; /* Beige Buttonfarbe */
-  color: #fff; /* Dunkler Text für den Button */
+  background-color: #b3a07c;
+  color: #fff;
   padding: 12px 24px;
   font-size: 16px;
   font-weight: bold;
