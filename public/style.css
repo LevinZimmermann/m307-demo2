@@ -296,3 +296,10 @@ body.gallery-page {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   margin-top: 15px;
 }
+
+body.login-seite {
+  margin: 0;
+  padding: 0;
+  background-color: #252a24;
+  color: #ffffff;
+}
