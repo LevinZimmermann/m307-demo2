@@ -12,7 +12,7 @@ const app = createApp({
 app.get("/", (req, res) => {
   res.render("start");
 });
-
+s
 // Gallery
 app.get("/gallery", async (req, res) => {
   const uploads = await app.locals.pool.query("SELECT * FROM uploads");
