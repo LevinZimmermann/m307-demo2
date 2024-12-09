@@ -303,3 +303,7 @@ body.login-seite {
   background-color: #252a24;
   color: #ffffff;
 }
+
+.login-formular {
+  margin-top: 100px;
+}
